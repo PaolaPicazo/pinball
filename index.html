@@ -12,27 +12,26 @@
 	
 <body>
 <div class="contenedor">
-    
-        <p>Bienvenido a pinball un antiguo pero divertido juego que 
+	<div class="canvas">  
+         <p>Bienvenido a pinball un antiguo pero divertido juego que 
             te recordara a tu niñez. <br> Has click con el mouse sobre las palancas pra evitar que la pelota caiga. 
         </p>   
-   <button class="button" onclick="setupScene()">Empegit branch -M mainzar</button>
-   Puntuación <span id = "score">0</span>
-
-    <div class="canvas">
-        
+   <button class="button" onclick="setupScene()">Empezar</button>
+   Puntuación <span id = "score">0</span>    
     <br>   
-	<canvas id="myCanvas"></canvas>
-</div>
- </div>	 <script>
+	<canvas id="myCanvas"></canvas> 
+	</div>
+ </div>	
+ 
+ <script>
 
 	// Dibujando nuestro contenedor-:)-------
 
 	var canvas = document.getElementById("myCanvas");
 	var c = canvas.getContext("2d");
 // Dimenciones
-	canvas.width = window.innerWidth - 40;
-	canvas.height = window.innerHeight - 110;
+	 canvas.width = window.innerWidth - 40;
+	 canvas.height = window.innerHeight - 110;
 
 	var flipperHeight = 2;
     // Asignamos dimenciones para que este proporcionado
@@ -230,7 +229,7 @@
 //2da pelota
 			pos = new Vector2(0.08,  0.5);
 			vel = new Vector2(0.2, 3.5);
-			physicsScene.balls.push(new Ball(radius, mass, pos, vel, 0.2));
+			// physicsScene.balls.push(new Ball(radius, mass, pos, vel, 0.2));
 		}
 
 		// Creamos los obstaculor asi como su localización por medio de las cordenadas
