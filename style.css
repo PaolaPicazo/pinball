@@ -8,33 +8,98 @@ body
     font-family: verdana; 
     font-size: 23px;
     color: #ffffff;
-    
-}			
-.button {
-    background-color: #ffffff;
-    border: none;
-    border-radius: 25px;
-    color: rgb(5, 5, 5);
-    padding: 10px 42px;
-    font-size: 18px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-.button:hover {
-    background-color: #030303;
-    color: rgb(255, 255, 255);
+    background-image: url(./img/fondo.png);
 
-}
+}	
+
 .contenedor {
     padding-top: .5rem;
     width: 100%;
     height: auto;   
-    background-image: url(fondo.png);
 }
 
 span {
     text-align: 4rem;
 } 
+/* Bienvenida  */
 
 
+ h2  {
+    font-size: 1rem;
+}
 
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+.container-b {
+width: 100%;
+height: 100vh;
+display: flex;
+place-items: center;
+justify-content: center;
+
+}
+.info {
+    height: auto;
+    width: 40rem;
+    font-size: 2rem;
+text-align: justify;
+margin-top: 2rem;
+
+}
+
+img {
+    width: 11rem;
+    height: 11rem; 
+ border-radius: 90px; 
+ float: right;
+ margin-left: 2rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 45px;
+    border: 3px solid #5d77c3;
+    border-radius: 10px;
+    margin-left: 25%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+button:hover {
+    animation: pulsate 1s ease-in-out;
+}
+
+.btn-p {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 26px;
+    border: 3px solid #5d77c3;
+    margin-bottom: 1REM;
+    border-radius: 10px;
+    margin-left: 2%;
+    font-weight: bold;
+    font-size: .7rem;
+    cursor: pointer;
+}
+button:hover {
+    animation: pulsate 1s ease-in-out;
+}
+
+
+@keyframes pulsate {
+    0% {
+        box-shadow: 0 0 20px rgb(6, 180, 255), 
+    0 0 60px rgb(255, 255, 255);
+}
+}
